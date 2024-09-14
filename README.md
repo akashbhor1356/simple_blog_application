@@ -5,7 +5,8 @@
 1. Clone the repository:
    ```bash
    git clone <repository-url>
-   cd myblog
+   cd mysite
+   
 
 Create and activate a virtual environment:
 python -m venv venv
