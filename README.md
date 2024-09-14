@@ -1,30 +1,38 @@
 # Simple Blog Application
 
-## Setup
+## Setup Instructions
 
 1. Clone the repository:
-   ```bash
-   git clone <repository-url>
-   cd mysite
-   
-Blog application made with Django
-Create and activate a virtual environment:
-python -m venv venv
-source venv/bin/activate  # On Windows use venv\Scripts\activate
+    ```bash
+    git clone <repository_url>
+    cd mysite
+    ```
 
-Install dependencies:
-pip install -r requirements.txt
+2. Create a virtual environment and activate it:
+    ```bash
+    python -m venv env
+    source # On Windows use `env\Scripts\activate`
+    ```
 
-Apply migrations:
-python manage.py migrate
+3. Install the required packages:
+    ```bash
+    pip install -r requirements.txt
+    ```
 
-Create a superuser:
-python manage.py createsuperuser
+4. Run migrations:
+    ```bash
+    python manage.py makemigrations
+    python manage.py migrate
+    ```
 
-Run the development server:
-python manage.py runserver
+5. Run the development server:
+    ```bash
+    python manage.py runserver
+    ```
 
-Functionality
-Users can read, create, update, and delete blog posts.
-User authentication for creating and managing posts.
-Admin panel for managing all posts.
+## Functionality
+
+- Users can sign up, log in, and log out.
+- Authenticated users can create, edit, and delete their own blog posts.
+- All blog posts are listed on the home page in reverse chronological order.
+- Admins can manage all blog posts through the Django admin panel.
