@@ -7,7 +7,7 @@
    git clone <repository-url>
    cd mysite
    
-
+Blog application made with Django
 Create and activate a virtual environment:
 python -m venv venv
 source venv/bin/activate  # On Windows use venv\Scripts\activate
